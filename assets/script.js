@@ -10,7 +10,7 @@ async function displayForecast(city) {
       const forecastData = data.list.filter((weatherData, index) => index % 8 === 0);
   
       // Clear any existing forecast data from the page
-      document.querySelector('#forecast-container').innerHTML = '';
+      document.querySelector('#five-day-forecast').innerHTML = '';
   
       // Iterate through the forecast data and display the information for each day
       forecastData.forEach(dayData => {
