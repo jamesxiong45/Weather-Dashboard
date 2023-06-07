@@ -9,8 +9,8 @@
     </header>
     <main>
       <form id="city-search">
-        <input type="text" placeholder="Enter city name">
-        <button type="submit">Search</button>
+        <input type="text" placeholder="Enter city name" id="city-input">
+        <button type="submit" id="search-button">Search</button>
       </form>
       <section id="current-weather">
         <h2>Current Weather</h2>
@@ -23,13 +23,7 @@
       </section>
       <section id="five-day-forecast">
         <h2>5-Day Forecast</h2>
-        <div class="forecast-day">
-          <div class="date"></div>
-          <div class="weather-icon"></div>
-          <div class="temperature"></div>
-          <div class="humidity"></div>
-          <div class="wind-speed"></div>
-        </div>
+        <div id="forecast-container"></div>
       </section>
       <aside id="search-history">
         <h2>Search History</h2>
@@ -42,3 +36,4 @@
   </body>
   <script src="./assets/script.js"></script>
 </html>
+
